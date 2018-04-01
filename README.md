@@ -22,12 +22,14 @@ npm install --production --save @greenlight/schema-config
 
 ---
 
-> Copyright: [Ahmad Nassri](https://www.ahmadnassri.com) •
-> License: [ISC][license-url] •
-> Github: [@AhmadNassri](https://github.com/ahmadnassri) •
-> Twitter: [@AhmadNassri](https://twitter.com/ahmadnassri)
+> License: [ISC][license-url] • 
+> Copyright: [greenlight.ci](https://greenlight.ci) • 
+> Github: [@greenlight-CI](https://github.com/greenlight-CI) • 
+> Twitter: [@greenlightCI](https://twitter.com/greenlightCI)
 
-[Greenlight]: https://greenlight.ci
+[greenlight]: https://greenlight.ci
+
+[json schema]: http://json-schema.org
 
 [license-image]: https://img.shields.io/github/license/greenlight/schema-config.svg?style=flat-square
 
@@ -40,7 +42,3 @@ npm install --production --save @greenlight/schema-config
 [travis-image]: https://img.shields.io/travis/greenlight-ci/schema-config.svg?style=flat-square
 
 [travis-url]: https://travis-ci.org/greenlight-ci/schema-config
-
-[greenlight]: https://greenlight.ci
-
-[json schema]: http://json-schema.org
