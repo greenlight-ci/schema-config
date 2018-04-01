@@ -20,6 +20,12 @@ Available as an `npm` package for validation purposes, compatible with any [JSON
 npm install --production --save @greenlight/schema-config
 ```
 
+## API
+
+```js
+const { schema, regex } = require('@greenlight/schema-config')
+```
+
 ---
 
 > License: [ISC][license-url] • 
