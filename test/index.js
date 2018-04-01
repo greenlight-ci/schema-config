@@ -4,9 +4,8 @@ const { safeLoad } = require('js-yaml')
 const { test } = require('tap')
 const Ajv = require('ajv')
 
+const { schema } = require('..')
 const json = require('./fixtures/greenlight.json')
-const schema = require('../spec/1.0.0/schema.json')
-
 const yaml = readFileSync(join(__dirname, 'fixtures', 'greenlight.yml'), 'utf8')
 
 const ajv = new Ajv()
