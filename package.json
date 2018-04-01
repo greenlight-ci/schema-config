@@ -9,7 +9,7 @@
     "url": "https://github.com/greenlight-ci/schema-config.git"
   },
   "license": "ISC",
-  "main": "spec/latest/schema.json",
+  "main": "index.js",
   "keywords": [
     "greenlight",
     "config",
