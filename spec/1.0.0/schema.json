@@ -1,0 +1,69 @@
+{
+  "$id": "https://schemas.greenlight.ci/config/1.0.0/schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Greenlight Report Schema",
+  "description": "JSON Schema for Greenlight Config",
+  "definitions": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "plugins"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "title": "Greenlight Config Schema Version",
+      "description": "Used to determine what Greenlight Config schema version to validate against",
+      "type": "string",
+      "pattern": "\\bv?(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)(?:-[\\da-z-]+(?:\\.[\\da-z-]+)*)?(?:\\+[\\da-z-]+(?:\\.[\\da-z-]+)*)?\\b"
+    },
+    "plugins": {
+      "title": "Plugins",
+      "description": "List of Plugins to enable / configure",
+      "type": "object",
+      "minProperties": 0,
+      "patternProperties": {
+        ".*": {
+          "oneOf": [
+            { "type": "boolean" },
+            { "type": "object",
+              "title": "Configuration",
+              "description": "Plugin Configuration",
+              "properties": {
+                "enabled": {
+                  "title": "Enabled",
+                  "description": "Flag to enable/disable the plugin",
+                  "type": "boolean"
+                },
+                "exclude": {
+                  "title": "Exclude Pattern",
+                  "description": "Path(s) to exclude in scan",
+                  "oneOf": [
+                    { "$ref": "#/definitions/nonEmptyString" },
+                    { "type": "array", "uniqueItems": true, "items": { "$ref": "#/definitions/nonEmptyString" } }
+                  ]
+                },
+                "settings": {
+                  "title": "Settings",
+                  "description": "Plugin specific settings",
+                  "oneOf": [
+                    { "$ref": "#/definitions/nonEmptyString" },
+                    { "type": "object" }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
