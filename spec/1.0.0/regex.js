@@ -1,1 +1,1 @@
-module.exports = /^\.?greenlight\.(json|ya?ml|rc){1}$/
+module.exports = /^\.?greenlight(\.json|\.ya?ml|rc){1}$/
