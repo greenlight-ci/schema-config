@@ -14,7 +14,6 @@ cache:
     - node_modules
 
 stages:
-  - cache
   - test
   - release
 
@@ -22,10 +21,6 @@ before_install: export PATH=$PATH:$TRAVIS_BUILD_DIR/.scripts
 
 jobs:
   include:
-    - stage: cache
-      node: 9
-      script: true
-
     - stage: release
       node: 9
       install: npm install --production
