@@ -9,7 +9,7 @@ Config files are required to be saved in `UTF-8` encoding, other encodings are f
 Acceptable file name must match the following pattern:
 
 ```regex
-^\.?greenlight\.(json|ya?ml){1}$
+^\.?greenlight\.(json|ya?ml|rc){1}$
 ```
 
 ###### Example
