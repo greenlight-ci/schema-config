@@ -10,7 +10,7 @@ Before submitting your contribution, please make sure to take a moment and read 
 
 ## Code of Conduct
 
-This project is governed by the [Contributor Covenant version 1.4][code-of-conduct]. All contributors and participants agree to abide by its terms. To report violations, send an email to support@bench.ci.
+This project is governed by the [Contributor Covenant version 1.4][code-of-conduct]. All contributors and participants agree to abide by its terms. To report violations, send an email to ahmad@ahmadnassri.com.
 
 ## Issue Reporting Guidelines
 
