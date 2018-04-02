@@ -41,16 +41,16 @@ name        | type     | required | default | description
     "foo": true,
     "eslint": {
       "enabled": true,
-      "exclude": "node_modules/**",
+      "paths": "!node_modules/**",
       "settings": {
         "foo": "bar"
       }
     },
     "csslint": {
       "enabled": true,
-      "exclude": [
-        "test/**",
-        "node_modules/**"
+      "paths": [
+        "!test/**",
+        "!node_modules/**"
       ]
     }
   }
@@ -59,11 +59,11 @@ name        | type     | required | default | description
 
 > Plugins are declared as key/value pairs, where `value` can either be a `boolean` (enable / disable), or an `object` allowing for further configuration:
 
-name         | type           | required | default | description                      
------------- | -------------- | -------- | ------- | ---------------------------------
-**enabled**  | `Boolean`      | ✖        | `true`  | Flag to enable/disable the plugin
-**exclude**  | `String|Array` | ✖        | `-`     | Path(s) to exclude in scan       
-**settings** | `Object`       | ✖        | `-`     | Plugin specific settings         
+name         | type           | required | default | description                         
+------------ | -------------- | -------- | ------- | ------------------------------------
+**enabled**  | `Boolean`      | ✖        | `true`  | Flag to enable/disable the plugin   
+**paths**    | `String|Array` | ✖        | `-`     | Path(s) to include / exclude in scan
+**settings** | `Object`       | ✖        | `-`     | Plugin specific settings            
 
 ---
 
@@ -75,14 +75,14 @@ name         | type           | required | default | description
 >   "plugins": {
 >     "foo": {
 >       "enabled": true,
->       "exclude": "node_modules",
+>       "paths": "!node_modules",
 >       "settings": {
 >         "foo": "bar"
 >       }
 >     },
 >     "bar": {
 >       "enabled": true,
->       "exclude": ["node_modules"],
+>       "paths": ["!node_modules"],
 >       "settings": {
 >         "foo": "bar"
 >       }
@@ -100,14 +100,14 @@ name         | type           | required | default | description
 > plugins:
 >   foo:
 >     enabled: true
->     exclude: node_modules
+>     paths: !node_modules
 >     settings:
 >       foo: "bar"
 >
 >   bar:
 >     enabled: true
->     exclude:
->       - node_modules
+>     paths:
+>       - !node_modules
 >     settings:
 >       foo: bar
 >

@@ -43,9 +43,10 @@
                   "description": "Flag to enable/disable the plugin",
                   "type": "boolean"
                 },
-                "exclude": {
-                  "title": "Exclude Pattern",
-                  "description": "Path(s) to exclude in scan",
+                "paths": {
+                  "title": "Path Patterns",
+                  "description": "Path(s) to include / exclude in scan",
+                  "default": "**",
                   "oneOf": [
                     { "$ref": "#/definitions/nonEmptyString" },
                     { "type": "array", "uniqueItems": true, "items": { "$ref": "#/definitions/nonEmptyString" } }
