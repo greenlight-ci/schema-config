@@ -1,4 +1,4 @@
-![Greenlight Logo](https://gitcdn.link/repo/greenlight-ci/brand/master/logo/banner.svg)
+![Greenlight Logo](https://gitcdn.link/repo/greenlight/brand/master/logo/banner.svg)
 
 # Config Schema [![version][npm-version]][npm-url] [![License][license-image]][license-url] [![Build Status][travis-image]][travis-url]
 
@@ -30,7 +30,7 @@ const { schema, regex } = require('@greenlight/schema-config')
 
 > License: [ISC][license-url] • 
 > Copyright: [greenlight.ci](https://greenlight.ci) • 
-> Github: [@greenlight-CI](https://github.com/greenlight-CI) • 
+> Github: [@greenlight](https://github.com/greenlight) • 
 > Twitter: [@greenlightCI](https://twitter.com/greenlightCI)
 
 [greenlight]: https://greenlight.ci
@@ -45,6 +45,6 @@ const { schema, regex } = require('@greenlight/schema-config')
 
 [npm-version]: https://img.shields.io/npm/v/@greenlight/schema-config.svg?style=flat-square
 
-[travis-image]: https://img.shields.io/travis/greenlight-ci/schema-config.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/greenlight/schema-config.svg?style=flat-square
 
-[travis-url]: https://travis-ci.org/greenlight-ci/schema-config
+[travis-url]: https://travis-ci.org/greenlight/schema-config
