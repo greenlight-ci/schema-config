@@ -1,6 +1,6 @@
 repository:
   name: schema-config
-  description: JSON Schema for Greenlight Config
+  description: 📃 JSON Schema for Greenlight Config
   topics: greenlight, schema, jsonschema, config
   homepage: https://greenlight.ci/
   private: false
