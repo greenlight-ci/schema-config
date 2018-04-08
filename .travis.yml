@@ -12,8 +12,6 @@ stages:
   - test
   - release
 
-before_install: export PATH=$PATH:$TRAVIS_BUILD_DIR/.scripts
-
 jobs:
   include:
     - stage: test
