@@ -2,11 +2,7 @@ if: tag IS blank
 
 language: node_js
 
-services: docker
-
-node_js:
-  - 9
-  - 8
+node_js: 9
 
 cache:
   directories:
@@ -20,8 +16,9 @@ before_install: export PATH=$PATH:$TRAVIS_BUILD_DIR/.scripts
 
 jobs:
   include:
+    - stage: test
+
     - stage: release
-      node: 9
       install: npm install --production
       script: npx semantic-release
       if: branch = master
