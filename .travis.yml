@@ -17,7 +17,6 @@ jobs:
     - stage: test
 
     - stage: release
-      install: npm install --production
       script: npx semantic-release
       if: branch = master
       if: type IN (push)
