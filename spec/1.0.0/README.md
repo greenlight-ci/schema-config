@@ -62,7 +62,7 @@ name        | type     | required | default | description
 name         | type           | required | default | description                         
 ------------ | -------------- | -------- | ------- | ------------------------------------
 **enabled**  | `Boolean`      | ✗        | `true`  | Flag to enable/disable the plugin   
-**paths**    | `String|Array` | ✗        | `-`     | Path(s) to include / exclude in scan
+**paths**    | `String or Array` | ✗        | `-`     | Path(s) to include / exclude in scan
 **settings** | `Object`       | ✗        | `-`     | Plugin specific settings            
 
 ---
