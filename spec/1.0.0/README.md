@@ -30,8 +30,8 @@ Acceptable file name must match the following pattern:
 
 name        | type     | required | default | description                                      
 ----------- | -------- | -------- | ------- | -------------------------------------------------
-**version** | `String` | ✔        | `-`     | Spec version. Format must follow [semver][]      
-**plugins** | `Object` | ✔        | `-`     | List of [Plugins](#plugins) to enable / configure
+**version** | `String` | 🗸        | `-`     | Spec version. Format must follow [semver][]      
+**plugins** | `Object` | 🗸        | `-`     | List of [Plugins](#plugins) to enable / configure
 
 ### `plugins`
 
@@ -61,9 +61,9 @@ name        | type     | required | default | description
 
 name         | type           | required | default | description                         
 ------------ | -------------- | -------- | ------- | ------------------------------------
-**enabled**  | `Boolean`      | ✖        | `true`  | Flag to enable/disable the plugin   
-**paths**    | `String|Array` | ✖        | `-`     | Path(s) to include / exclude in scan
-**settings** | `Object`       | ✖        | `-`     | Plugin specific settings            
+**enabled**  | `Boolean`      | ✗        | `true`  | Flag to enable/disable the plugin   
+**paths**    | `String|Array` | ✗        | `-`     | Path(s) to include / exclude in scan
+**settings** | `Object`       | ✗        | `-`     | Plugin specific settings            
 
 ---
 
